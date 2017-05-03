@@ -1,8 +1,7 @@
 class CategoriesController < ApplicationController
-	before_action :set_catogory
+	before_action :set_category
   
   def show
-    @foods = @category.foods
 	end
 
   private
