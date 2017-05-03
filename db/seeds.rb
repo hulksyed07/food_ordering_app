@@ -6,4 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Category.create([:name 'Indian'], [name: 'Chinese'], [name: 'Desserts'], [name: 'Starters'],[name: 'Appetizers'],[name: 'Cakes'])
+Category.create([{ name: 'Indian' }, { name: 'Chinese' }, { name: 'Desserts' }, { name: 'Starters' }, { name: 'Appetizers' }, { name: 'Cakes' }])
+
+categories = Category.all
+
+categories.each_with_index do |category, i|
+	category.foods.create([{name: "#{category.name}Food_#{i+1}", price: 100}, {name: "#{category.name}Food_#{i+2}", price: 80},
+		{name: "#{category.name}Food_#{i+3}", price: 120}, {name: "#{category.name}Food_#{i+4}", price: 230}])
+end
