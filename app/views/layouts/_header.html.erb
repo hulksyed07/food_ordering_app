@@ -1,10 +1,20 @@
-<div style="text-align: right;">
-  <% if current_user.present? %>
-    <h4>Hi <%= current_user.username %>  <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h3>
-  <% else %>
-    <h4>
-      <%= link_to 'Log In', new_user_session_path %>
-      <%= link_to 'Sign Up', new_user_registration_path %>
-    </h4>
-  <% end %>
-<div>
+<div style="background-color: #EA5B31; display: flex;">
+
+	<%= link_to "#{ image_tag 'india_eats1.png', size:"100x100" }".html_safe , root_path , {style: 'text-align: left; margin-left: 50px;' }%>
+
+	<div style="text-align: center; margin-left: 300px;">
+		<h1>Welcome to IndiaEats</h1>
+		<p>Choose from a list of mouth watering delicious meals</p>
+	</div>
+
+	<div style="text-align: right;margin-left: 400px;">
+	  <% if current_user.present? %>
+	    <h4>Hi <%= current_user.username %>  <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h4>
+	  <% else %>
+	    <h4>
+	      <%= link_to 'Log In', new_user_session_path %>
+	      <%= link_to 'Sign Up', new_user_registration_path %>
+	    </h4>
+	  <% end %>
+	</div>
+</div>
