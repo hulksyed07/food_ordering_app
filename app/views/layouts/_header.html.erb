@@ -1,0 +1,10 @@
+<div style="text-align: right;">
+  <% if current_user.present? %>
+    <h4>Hi <%= current_user.username %>  <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h3>
+  <% else %>
+    <h4>
+      <%= link_to 'Log In', new_user_session_path %>
+      <%= link_to 'Sign Up', new_user_registration_path %>
+    </h4>
+  <% end %>
+<div>
