@@ -5,6 +5,7 @@ class Address < ApplicationRecord
 
   #   "address_repo_#{Rails.env}"
   # end
+  belongs_to :user
 
   establish_connection "address_repo_#{Rails.env}".to_sym
 end

@@ -1,0 +1,32 @@
+<%#= render 'address', address: @address %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full Name:</strong>
+  <%= @address.full_name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @address.street %>
+</p>
+
+<p>
+  <strong>Flat No.:</strong>
+  <%= @address.flat_no %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @address.phone %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_my_address_addresses_path %>

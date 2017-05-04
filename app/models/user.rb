@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :orders
   has_one :draft_order, -> { where order_status: OrderStatus.find_by_name('Draft')} , class_name: 'Order'
+  has_one :address
 
   def cart_size
     draft_order.carts.count

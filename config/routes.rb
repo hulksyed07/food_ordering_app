@@ -22,4 +22,10 @@ Rails.application.routes.draw do
   	end
   end
 
+  resources :addresses do
+    collection do
+      get 'edit_my_address'
+    end
+  end
+
 end
