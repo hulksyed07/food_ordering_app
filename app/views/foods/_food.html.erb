@@ -1,3 +1,11 @@
 <td><%= food.name %></td>
 <td><%= food.price %></td>
-<td><%= link_to 'Add to cart', add_to_cart_category_food_path(category, food)%></td>
+<td><%= current_user_food_quantity(food) %></td>
+
+
+<% if current_user_food_quantity(food) > 0 %>
+	<td><%= link_to "#{image_tag 'plus.png', size: "20x20"}".html_safe, add_to_cart_category_food_path(category, food), method: :post %></td>
+	<td><%= link_to "#{image_tag 'minus.png', size: "20x20"}".html_safe, remove_from_cart_category_food_path(category, food), method: :post  %></td>
+<% else %>
+	<td colspan="2"><%= link_to "#{image_tag 'add.png', size: "60x25"}".html_safe, add_to_cart_category_food_path(category, food), method: :post %></td>
+<% end %>

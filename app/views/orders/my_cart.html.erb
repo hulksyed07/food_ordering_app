@@ -1,5 +1,7 @@
 <center>
 <% unless @order.blank? %>
+	<br><%= link_to 'Explore Main Menu', root_path %>
+	
 	<br><%= button_to 'Buy Now' , buy_now_orders_path %><hr>
 
 	<table align="center">
@@ -20,7 +22,9 @@
 	  </tbody>
 	</table>
 
-	<hr><%= button_to 'Buy Now' , buy_now_orders_path %>
+	
+	<hr><%= button_to 'Buy Now' , buy_now_orders_path %><br>
+	<%= link_to 'Explore Main Menu', root_path %>
 <% else %>
 	<h4>Your Cart seems to be empty</h4>
 	<h4>Please get some delicious foods and fill your cart</h4>

@@ -9,7 +9,6 @@ class OrdersController < ApplicationController
     order = current_user.draft_order
     order.order_status = OrderStatus.find_by_name('Submitted')
     order.save
-    flash[:notice] = "Order successfully placed"
     redirect_to root_path
   end
 
