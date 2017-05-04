@@ -6,11 +6,13 @@
 
 * Please use rake db:seed before using the application. This will create some dummy data useful for testing.
 
+* Please run this command before running the tests: "rails db:migrate RAILS_ENV=test"
+
+* Run the test suite using the command: "rspec"
+
 * Database creation
 
 * Database initialization
-
-* Run the test suite using the command: rspec
 
 * Services (job queues, cache servers, search engines, etc.)
 
