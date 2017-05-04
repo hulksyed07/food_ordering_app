@@ -14,4 +14,11 @@ Rails.application.routes.draw do
   	end
   end
 
+  resources :orders do
+    collection do
+  		get 'my_cart'
+      post 'buy_now'
+  	end
+  end
+
 end

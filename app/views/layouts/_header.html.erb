@@ -7,9 +7,13 @@
 		<p>Choose from a list of mouth watering delicious meals</p>
 	</div>
 
-	<div style="text-align: right;margin-left: 330px;">
+	<div style="text-align: right;margin-left: 200px;">
 	  <% if current_user.present? %>
-	    <h4>Hi <%= current_user.username %>  <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h4>
+	    <h4>
+		    Hi <%= current_user.username %>&nbsp;
+		    <%= link_to 'My Cart', my_cart_orders_path %>
+		    <%= link_to 'My Orders', orders_path %>
+		    <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h4>
 	  <% else %>
 	    <h4>
 	      <%= link_to 'Log In', new_user_session_path %>

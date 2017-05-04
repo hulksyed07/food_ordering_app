@@ -1,0 +1,17 @@
+<table align="center">
+	<thead>
+	<tr>
+	  <td>Item Name</td>
+	  <td>Price</td>
+	  <td>Quantity</td>
+	  <td>Total Price</td>
+	</tr>
+
+	</thead>
+  <tbody>
+    <% @order.carts.each do |cart| %>
+      <tr><%= render 'carts/cart', cart: cart %></tr>
+    <% end %>
+
+  </tbody>
+</table>

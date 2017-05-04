@@ -1,0 +1,15 @@
+<table align="center">
+<thead>
+<tr>
+  <td>Order Date</td>
+  <td>Order Status</td>
+</tr>
+
+</thead>
+<tbody>
+  <% @orders.each do |order| %>
+    <tr><%= render 'order', order: order %></tr>
+  <% end %>
+
+</tbody>
+</table>
