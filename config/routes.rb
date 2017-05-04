@@ -6,5 +6,12 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
-  resources :categories
+  resources :categories do
+  	resources :foods do
+  		member do
+  			get 'add_to_cart'
+  		end
+  	end
+  end
+
 end

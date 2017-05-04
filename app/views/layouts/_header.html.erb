@@ -2,12 +2,12 @@
 
 	<%= link_to "#{ image_tag 'india_eats.png', size:"100x100" }".html_safe , root_path , {style: 'text-align: left; margin-left: 50px;' }%>
 
-	<div style="text-align: center; margin-left: 300px;">
+	<div style="text-align: center; margin-left: 360px;">
 		<h1>Welcome to IndiaEats</h1>
 		<p>Choose from a list of mouth watering delicious meals</p>
 	</div>
 
-	<div style="text-align: right;margin-left: 400px;">
+	<div style="text-align: right;margin-left: 330px;">
 	  <% if current_user.present? %>
 	    <h4>Hi <%= current_user.username %>  <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h4>
 	  <% else %>

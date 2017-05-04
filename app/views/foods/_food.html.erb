@@ -1,1 +1,3 @@
-<%= food.name %>
+<td><%= food.name %></td>
+<td><%= food.price %></td>
+<td><%= link_to 'Add to cart', add_to_cart_category_food_path(category, food)%></td>

@@ -1,3 +1,18 @@
-<% @category.foods.each do |food| %>
-	<%= render 'foods/food', :food => food %>
-<% end %>
+<div style="text-align: center;">
+  Choose from any of the delicious <%= @category.name %> food<br/>
+  <table align="center">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Price</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @category.foods.each do |food| %>
+      	<tr>
+          <%= render 'foods/food', :food => food, :category => @category %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

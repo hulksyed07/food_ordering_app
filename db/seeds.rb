@@ -14,3 +14,5 @@ categories.each_with_index do |category, i|
 	category.foods.create([{name: "#{category.name}Food_#{i+1}", price: 100}, {name: "#{category.name}Food_#{i+2}", price: 80},
 		{name: "#{category.name}Food_#{i+3}", price: 120}, {name: "#{category.name}Food_#{i+4}", price: 230}])
 end
+
+OrderStatus.create([{ name: 'Draft' }, { name: 'Submitted' }, { name: 'Delivered' }])
