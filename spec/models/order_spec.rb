@@ -13,7 +13,12 @@ RSpec.describe Order, type: :model do
 
   describe "update or delete a Order" do
   	before(:each) do
-  		@order = create(:order)
+  		Order.delete_all
+      Cart.delete_all
+      @order = create(:order)
+      puts @order.id
+      @cart = @order.carts.create(:item_name => 'TestFood_5', :price => 100, :quantity => 1, :food_id => 1)
+      puts @cart.inspect
   	end
 
   	it "should update an order status with valid params" do
@@ -23,11 +28,13 @@ RSpec.describe Order, type: :model do
 	  	expect(@order.reload.order_status.name).to eq('TestStatus_2')
 	  end
 
-	  it "should delete an order with valid id" do
+	  it "should delete an order with dependent carts" do
 	  	order = Order.find_by_id(@order.id)
-	  	order.delete
+	  	order.destroy
 
 	  	expect(Order.find_by_id(@order.id)).to eq(nil)
+      cart = Cart.find_by_id(@cart.id)
+      expect(cart).to eq(nil)
 	  end
   end
 end

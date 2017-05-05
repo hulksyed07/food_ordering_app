@@ -23,4 +23,17 @@ module ControllerMacros
       sign_in user
     end
   end
+
+ #  def login_user
+	#   Warden.test_mode!
+	#   User.instance_eval do
+ #      	attr_accessor :confirmed_at
+ #  	end
+	#   user = create(:user)
+	#   login_as user, :scope => :user
+	#   user.confirmed_at = Time.now
+	#   user.confirm!
+	#   user.save
+	#   user
+	# end
 end
