@@ -29,3 +29,7 @@
 
 ### Clicking on My orders shows all orders including the order that is in cart with a Draft status
 ![On opening My order](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/clicking_on_my_orders_shows_all_orders(my%20cart%20shown%20as%20draft%20order).jpg)
+
+
+### Clicking on My Address fetches the User Address from a different Database
+![On Opening My Address](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/clicking_on_my_address_which_fetches_data_from_different_db.jpg)
