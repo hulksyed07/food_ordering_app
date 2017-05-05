@@ -15,7 +15,7 @@ class OrdersController < ApplicationController
   def clear_cart
     order = current_user.draft_order
     order.destroy
-    redirect_to root_path
+    redirect_to root_path, notice: 'Cart cleared'
   end
 
   def show
