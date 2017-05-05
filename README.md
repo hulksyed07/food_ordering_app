@@ -15,3 +15,5 @@
 ### Choose a category
 ![After Clicking on a category](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/After%20clicking%20Category.jpg)
 
+### Add product of your choice to cart
+![After Clicking on add to cart](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/after_clicking_on_add_to_cart.jpg)
