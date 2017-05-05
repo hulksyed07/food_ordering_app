@@ -26,7 +26,7 @@ class AddressesController < ApplicationController
 
   def update
     if current_user.address.update(address_params)
-      redirect_to addresses_path
+      redirect_to addresses_path, notice: 'Address updated successfully'
     else
       render :edit_my_address
     end

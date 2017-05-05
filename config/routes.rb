@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     collection do
   		get 'my_cart'
       post 'buy_now'
+      post 'clear_cart'
   	end
   end
 

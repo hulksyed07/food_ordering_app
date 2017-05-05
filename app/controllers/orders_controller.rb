@@ -9,6 +9,12 @@ class OrdersController < ApplicationController
     order = current_user.draft_order
     order.order_status = OrderStatus.find_by_name('Submitted')
     order.save
+    redirect_to root_path, notice: 'Order Placed Successfully'
+  end
+
+  def clear_cart
+    order = current_user.draft_order
+    order.destroy
     redirect_to root_path
   end
 

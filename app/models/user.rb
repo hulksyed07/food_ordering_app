@@ -9,6 +9,6 @@ class User < ApplicationRecord
   has_one :address
 
   def cart_size
-    draft_order.carts.count
+    draft_order.blank? ? 0 : draft_order.carts.count
   end
 end
