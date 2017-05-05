@@ -10,16 +10,8 @@
 
 * Run the test suite using the command: "rspec"
 
-* Database creation
+![Home Page](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/Home_Page.jpg)
 
-* Database initialization
+### At this point you can add stories
+![After Clicking on a category](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/After%20clicking%20Category.jpg)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
