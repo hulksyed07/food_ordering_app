@@ -17,3 +17,6 @@
 
 ### Add product of your choice to cart
 ![After Clicking on add to cart](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/after_clicking_on_add_to_cart.jpg)
+
+### Open the cart to finalize or cancel
+![On Opening the cart](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/on_opening_cart.jpg)
