@@ -12,6 +12,6 @@
 
 ![Home Page](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/Home_Page.jpg)
 
-### At this point you can add stories
+### Choose a category
 ![After Clicking on a category](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/After%20clicking%20Category.jpg)
 
