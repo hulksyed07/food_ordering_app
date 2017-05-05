@@ -20,3 +20,12 @@
 
 ### Open the cart to finalize or cancel
 ![On Opening the cart](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/on_opening_cart.jpg)
+
+### On cliking buy user redirected to Home page with a confirmation notice
+[On clicking buy](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/after_buying_user_redirected_to_home_page.jpg)
+
+### When user clicks on My cart when cart is empty
+[On opening an empty cart](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/clicking_on_cart_when_cart_is_empty.jpg)
+
+### Clicking on My orders shows all orders including the order that is in cart with a Draft status
+[On opening My order](https://github.com/hulksyed07/setup_oracle_on_MAC/blob/master/clicking_on_my_orders_shows_all_orders(my%20cart%20shown%20as%20draft%20order).jpg)
