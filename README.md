@@ -1,10 +1,12 @@
 == README
 
+* Please use rake db:seed before using the application. This will create some dummy Food and Category data important for using the app.
+
 * Bundled with Ruby 2.3.3p222, Rails 5.0.1
 
 * Built on Windows 64
 
-* Please use rake db:seed before using the application. This will create some dummy Food and Category data important for using the app.
+* The Address Model connects to a different database
 
 * Please run this command before running the tests: "rails db:migrate RAILS_ENV=test"
 
