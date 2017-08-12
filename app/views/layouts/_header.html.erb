@@ -1,13 +1,13 @@
-<div style="display: flex;">
+<div style="display: flex; position: relative;left: 24%;">
 
-	<%= link_to "#{ image_tag 'Picture1.png', size:"110x110" }".html_safe , root_path , {style: 'text-align: left; margin-left: 130px;' }%>
+	<%= link_to "#{ image_tag 'Picture1.png', size:"110x110" }".html_safe , root_path , {style: 'text-align: left; ' }%>
 
-	<div style="text-align: center; margin-left: 285px;">
+	<div style="text-align: center; margin-left: 60px;">
 		<h1>Welcome to IndiaEats</h1>
 		<p>Choose from a list of mouth watering delicious meals</p>
 	</div>
 
-	<div style="text-align: right;margin-left: 76px;">
+	<div style="text-align: right;margin-left: 55px;">
 	  <% if current_user.present? %>
 	    <h4>
 		    Hi <%= current_user.username %>&nbsp;
