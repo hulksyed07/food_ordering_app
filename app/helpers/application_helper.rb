@@ -14,4 +14,7 @@ module ApplicationHelper
     end
 	end
 
+  def image_for_category(name)
+    "#{ image_tag (name + '.jpg'), size:"150x150" }".html_safe
+  end
 end
