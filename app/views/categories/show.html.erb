@@ -2,13 +2,19 @@
   <br><%= link_to 'Explore Main Menu', root_path %> | 
   <%= link_to "My Cart (#{current_user.cart_size})", my_cart_orders_path %><br><hr>
   <h4>Choose from any of the delicious <%= @category.name %> food</h4>
-  <table align="center">
+  <table align="center" style="width: 50%">
+    <col style="width:20%">
+    <col style="width:30%">
+    <col style="width:15%">
+    <col style="width:10%">
+    <col style="width:3%">
+    <col style="width:3%">
     <thead>
       <tr>
-        <td>Name</td>
-        <td></td>
-        <td>Price</td>
-        <td>Qauntity</td>
+        <th></th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Qauntity</th>
       </tr>
     </thead>
     <tbody>
