@@ -6,7 +6,7 @@
     left: 17%;">
 	<% @categories.each_with_index do |category, i| %>
 		<div>
-			<%= link_to image_for_category(category.name.downcase), category_path(category) %>
+			<%= link_to image_for_category(category.name), category_path(category) %>
 			<h4><%= category.name.titleize %></h4>
 		</div>
 		<% if i%3==0 %>
