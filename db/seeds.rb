@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Admin.create([{email: 'test1@test.com'}, {email: 'test2@test.com'}])
 
 Category.create([{ name: 'Indian' }, { name: 'Chinese' }, { name: 'Desserts' }, { name: 'Starters' }, { name: 'Appetizers' }, { name: 'Cakes' }])
 

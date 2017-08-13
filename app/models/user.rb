@@ -11,4 +11,8 @@ class User < ApplicationRecord
   def cart_size
     draft_order.blank? ? 0 : draft_order.carts.count
   end
+
+  def is_admin?
+    Admin.all.map(&:email).include? email.downcase
+  end
 end
