@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
   end
 
   def filter_non_admins
-  	ctrl = (params[:controller].titleize + 'Controller').constantize
-  	redirect_to root_path unless ctrl::NON_ADMIN_ACTIONS.include? params[:action].to_sym
+  	redirect_to root_path unless current_user.is_admin?
   end
 end

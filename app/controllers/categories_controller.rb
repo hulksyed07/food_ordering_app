@@ -1,8 +1,7 @@
 class CategoriesController < ApplicationController
 	before_action :authenticate_user!
-  before_action :set_category
-  before_action :filter_non_admins
-  NON_ADMIN_ACTIONS = [:show, :index]
+  before_action :set_category, only: [:show, :edit,:update]
+  before_action :filter_non_admins, except: [:show, :index]
   
   def show
 	end
