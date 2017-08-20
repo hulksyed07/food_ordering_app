@@ -1,17 +1,16 @@
 <div style="text-align:center;">
-<p id="notice"><%= notice %></p>
+	<p id="notice"><%= notice %></p>
 
-<h2>Choose from a category of your choice</h2>
-<div style="display: flex; position: relative;
-    left: 17%;">
+	<h2>Choose from a category of your choice</h2>
+	<div>
 	<% @categories.each_with_index do |category, i| %>
-		<div>
-			<%= link_to image_for_category(category.name), category_path(category) %>
-			<h4><%= category.name.titleize %></h4>
+		<div style="display: inline-block;">
+			<div><%= link_to image_for_category(category.name), category_path(category) %></div>
+			<div><h4><%= category.name.titleize %></h4></div>
 		</div>
-		<% if i%3==0 %>
+		<% if i%3==2 %>
 			<br/>
 		<% end %>
 	<% end %>
-</div>
+	</div>
 </div>
