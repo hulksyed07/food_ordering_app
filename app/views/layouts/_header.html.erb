@@ -1,19 +1,19 @@
-<div style="display: flex; position: relative;left: 24%;">
+<div>
+	<div style="display: inline-block;">
 
-	<%= link_to "#{ image_tag 'Picture1.png', size:"110x110" }".html_safe , root_path , {style: 'text-align: left; ' }%>
+		<%= link_to "#{ image_tag 'Picture1.png', size:"110x110" }".html_safe , root_path , {style: 'text-align: left; ' }%>
+		
+	</div>&nbsp;&nbsp;&nbsp;
 
-	<div style="text-align: center; margin-left: 60px;">
+	<div style="display: inline-block;">
 		<h1>Welcome to IndiaEats</h1>
 		<p>Choose from a list of mouth watering delicious meals</p>
-	</div>
+	</div>&nbsp;&nbsp;&nbsp;
 
-	<div style="text-align: right;margin-left: 55px;">
+	<div style="display: inline-block;">
 	  <% if current_user.present? %>
 	    <h4>
-		    Hi <%= current_user.username %>&nbsp;
-		    <%= link_to "My Cart (#{current_user.cart_size})", my_cart_orders_path %> |
-		    <%= link_to 'My Orders', orders_path %> |
-		    <%= link_to 'My Address', addresses_path%> |
+		    Hi <%= current_user.username %>
 		    <%= link_to 'Logout', destroy_user_session_path, method: :delete, data: {confirm: 'Are you Sure ?'}%></h4>
 	  <% else %>
 	    <h4>
@@ -23,3 +23,11 @@
 	  <% end %>
 	</div>
 </div>
+
+<% if current_user.present? %>
+	<div>
+		<div style="display: inline-block;"><%= link_to "My Cart (#{current_user.cart_size})", my_cart_orders_path %></div>
+		<div style="display: inline-block;"><%= link_to 'My Orders', orders_path %></div>
+		<div style="display: inline-block;"><%= link_to 'My Address', addresses_path%></div>
+	</div><br/>
+<% end %>
